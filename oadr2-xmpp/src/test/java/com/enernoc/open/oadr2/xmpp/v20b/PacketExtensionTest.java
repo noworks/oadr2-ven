@@ -65,8 +65,10 @@ import com.enernoc.open.oadr2.xmpp.OADR2PacketExtension;
  */
 public class PacketExtensionTest {
 
-	static final String username = System.getProperty("xmpp-username");
-	static final String passwd = System.getProperty("xmpp-pass");
+	// static final String username = System.getProperty("xmpp-username");
+	static final String username = "t-izuno@nri-net.com";
+	// static final String passwd = System.getProperty("xmpp-pass");
+	static final String passwd = "password";
 
 	ConnectionConfiguration connConfig = new ConnectionConfiguration("talk.google.com", 5222, "gmail.com");
 	XMPPConnection vtnConnection;
@@ -108,7 +110,7 @@ public class PacketExtensionTest {
 			vtnConnection.disconnect();
 	}
 
-	// @Test
+	@Test
 	public void testNamespaces() throws Exception {
 		StringWriter out = new StringWriter();
 		marshaller.marshal(createEventPayload(), out);

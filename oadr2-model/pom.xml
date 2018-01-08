@@ -22,7 +22,7 @@
 		<dependency>
 			<groupId>org.jvnet.jaxb2_commons</groupId>
 			<artifactId>jaxb2-basics-runtime</artifactId>
-			<version>0.6.1</version>
+			<version>1.11.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jvnet.jaxb2_commons</groupId>
@@ -86,7 +86,6 @@
 					<!-- <catalog>${basedir}/src/main/resources/catalog.cat</catalog> <catalogResolver>org.jvnet.jaxb2.maven2.resolver.tools.ClasspathCatalogResolver</catalogResolver> -->
 
 					<catalog>${basedir}/src/main/resources/catalog.xml</catalog>
-
 					<specVersion>${jaxb.version}</specVersion>
 					<extension>true</extension>
 					<schemaLanguage>AUTODETECT</schemaLanguage>
@@ -96,13 +95,15 @@
 						<arg>-XhashCode</arg>
 						<arg>-Xfluent-api</arg>
 						<arg>-Xvalue-constructor</arg>
+						<!-- 
 						<arg>-Xhyperjaxb3-ejb</arg>
+						 -->
 					</args>
 					<plugins>
 						<plugin>
 							<groupId>org.jvnet.jaxb2_commons</groupId>
 							<artifactId>jaxb2-basics</artifactId>
-							<version>0.6.1</version>
+							<version>1.11.1</version>
 						</plugin>
 						<plugin>
 							<groupId>org.jvnet.jaxb2_commons</groupId>
@@ -114,8 +115,10 @@
 							<artifactId>jaxb2-value-constructor</artifactId>
 							<version>3.0</version>
 						</plugin>
+						<!-- 
 						<plugin> <groupId>org.jvnet.hyperjaxb3</groupId> <artifactId>hyperjaxb3-ejb-plugin</artifactId> 
-							<version>0.5.6</version> </plugin> 
+							<version>0.5.6</version> </plugin>
+						--> 
 					</plugins>
 				</configuration>
 				<executions>
@@ -153,15 +156,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<profiles>
-		<profile>
-			<id>jdk16</id>
-			<activation>
-				<jdk>1.6</jdk>
-			</activation>
-			<properties>
-				<jaxb.version>2.1</jaxb.version>
-			</properties>
-		</profile>
-	</profiles>
 </project>

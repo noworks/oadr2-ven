@@ -15,20 +15,36 @@ import java.util.Map;
  */
 public enum XMLNS {
 
-	XSI("http://www.w3.org/2001/XMLSchema-instance", "xsi"), OADR2("http://openadr.org/oadr-2.0b/2012/07", "oadr2"), EI(
-			"http://docs.oasis-open.org/ns/energyinterop/201110",
-			"ei"), PYLD("http://docs.oasis-open.org/ns/energyinterop/201110/payloads", "pyld"), EMIX(
-					"http://docs.oasis-open.org/ns/emix/2011/06", "emix"), ICAL("urn:ietf:params:xml:ns:icalendar-2.0",
-							"ical"), STRM("urn:ietf:params:xml:ns:icalendar-2.0:stream", "strm"), DSIG11(
-									"http://www.w3.org/2009/xmldsig11#",
-									"dsig11"), DS("http://www.w3.org/2000/09/xmldsig#", "ds"), CLM(
-											"urn:un:unece:uncefact:codelist:standard:5:ISO42173A:2010-04-07",
-											"clm5ISO42173A"), SCALE(
-													"http://docs.oasis-open.org/ns/emix/2011/06/siscale",
-													"scale"), POWER("http://docs.oasis-open.org/ns/emix/2011/06/power",
-															"power"), GB("http://naesb.org/espi", "gb"), ATOM(
-																	"http://www.w3.org/2005/Atom", "atom"), GML(
-																			"http://www.opengis.net/gml/3.2", "gml");
+	//
+	XSI("http://www.w3.org/2001/XMLSchema-instance", "xsi"),
+	//
+	OADR2("http://openadr.org/oadr-2.0b/2012/07", "oadr2"),
+	//
+	EI("http://docs.oasis-open.org/ns/energyinterop/201110", "ei"),
+	//
+	PYLD("http://docs.oasis-open.org/ns/energyinterop/201110/payloads", "pyld"),
+	//
+	EMIX("http://docs.oasis-open.org/ns/emix/2011/06", "emix"),
+	//
+	ICAL("urn:ietf:params:xml:ns:icalendar-2.0", "ical"),
+	//
+	STRM("urn:ietf:params:xml:ns:icalendar-2.0:stream", "strm"),
+	//
+	DSIG11("http://www.w3.org/2009/xmldsig11#", "dsig11"),
+	//
+	DS("http://www.w3.org/2000/09/xmldsig#", "ds"),
+	//
+	CLM("urn:un:unece:uncefact:codelist:standard:5:ISO42173A:2010-04-07", "clm5ISO42173A"),
+	//
+	SCALE("http://docs.oasis-open.org/ns/emix/2011/06/siscale", "scale"),
+	//
+	POWER("http://docs.oasis-open.org/ns/emix/2011/06/power", "power"),
+	//
+	GB("http://naesb.org/espi", "gb"),
+	//
+	ATOM("http://www.w3.org/2005/Atom", "atom"),
+	//
+	GML("http://www.opengis.net/gml/3.2", "gml");
 
 	private static final Map<String, XMLNS> NS_MAP;
 

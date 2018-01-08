@@ -1,6 +1,6 @@
 package com.enernoc.open.oadr2;
 
-import com.sun.xml.internal.bind.marshaller.NamespacePrefixMapper;
+import com.sun.xml.bind.marshaller.NamespacePrefixMapper;
 
 public class MyNamespaceMapper extends NamespacePrefixMapper {
 
