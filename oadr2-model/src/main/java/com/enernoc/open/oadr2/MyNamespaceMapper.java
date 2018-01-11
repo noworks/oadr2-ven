@@ -4,8 +4,8 @@ import com.sun.xml.bind.marshaller.NamespacePrefixMapper;
 
 public class MyNamespaceMapper extends NamespacePrefixMapper {
 
-	private static final String OADR_PREFIX = "oadr"; // DEFAULT NAMESPACE
-	private static final String OADR_URI = "http://www.example.com/FOO";
+	private static final String OADR_PREFIX = "oad2"; // DEFAULT NAMESPACE
+	private static final String OADR_URI = "http://openadr.org/oadr-2.0b/2012/07";
 
 	@Override
 	public String getPreferredPrefix(String namespaceUri, String suggestion, boolean requirePrefix) {

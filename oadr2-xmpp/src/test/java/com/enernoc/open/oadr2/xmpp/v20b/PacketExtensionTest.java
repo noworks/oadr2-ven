@@ -90,16 +90,17 @@ public class PacketExtensionTest {
 
 	@Before
 	public void setUp() throws Exception {
-		if (username == null || passwd == null)
-			throw new Exception(
-					"XMPP Username or password are null! Set the system properties 'xmpp-username' and 'xmpp-pass'");
+		// if (username == null || passwd == null)
+		// throw new Exception(
+		// "XMPP Username or password are null! Set the system properties
+		// 'xmpp-username' and 'xmpp-pass'");
 
 		JAXBManager jaxb = new JAXBManager();
 		this.marshaller = jaxb.createMarshaller();
 		xmlDataTypeFac = DatatypeFactory.newInstance();
 
-		this.venConnection = connect("ven");
-		this.vtnConnection = connect("vtn");
+		// this.venConnection = connect("ven");
+		// this.vtnConnection = connect("vtn");
 	}
 
 	@After
